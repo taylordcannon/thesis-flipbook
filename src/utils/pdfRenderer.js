@@ -15,7 +15,7 @@ export async function renderPdfToImages(pdfUrl) {
     const page = await pdf.getPage(pageNumber)
 
     const viewport = page.getViewport({
-      scale: 2,
+      scale: 3,
     })
 
     const canvas = document.createElement('canvas')
